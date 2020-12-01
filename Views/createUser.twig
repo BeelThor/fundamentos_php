@@ -1,0 +1,19 @@
+{% extends 'template.twig' %}
+
+{% block content %}
+<h1>Create User</h1>
+{% if message %}
+<div class="alert alert-primary" role="alert">
+    {{message}}
+  </div>
+{% endif %}
+<form action="/fundamentos_php2018/user/add" method="post">
+    <label for="userName">User Name</label>
+    <input type="text" placeholder="User Name"name="UserName"><br>
+    <label for="Email">Email</label>
+    <input type="email" name="Email"placeholder="Email"><br>
+    <label for="password">Password</label>
+    <input type="password"name="password"placeholder="password"><br>
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

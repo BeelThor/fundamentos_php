@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "require": {
+        "illuminate/database": "^7.29",
+        "laminas/laminas-diactoros": "^2.4",
+        "aura/router": "^3.1",
+        "twig/twig": "^3.1",
+        "respect/validation": "^2.0"
+    }
+}

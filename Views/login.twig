@@ -1,0 +1,15 @@
+{% extends 'template.twig' %}
+
+{% block content %}
+<h1>Log in</h1>
+{% if message %}
+<div class="alert alert-primary" role="alert">
+    {{message}}
+</div>
+{% endif %}
+<form action="/fundamentos_php2018/authentication" method="post">
+<input type="text" name="Email" placeholder="Email"><br>
+<input type="password" name="Password" placeholder="Password"><br>
+<button type="submit">Log in</button>
+</form>
+{% endblock %}

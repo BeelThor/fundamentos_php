@@ -1,0 +1,11 @@
+{% extends "template.twig" %}
+{% block content %}
+<h1>Add Project</h1>
+<form action="/fundamentos_php2018/projects/add" method="post">
+<label for="">tiltle</label>
+<input type="text" name="title"><br>
+<label for="">Add description</label>
+<input type="text" name="description"><br>
+<button type="submit">Save</button>
+</form>
+{% endblock %}
